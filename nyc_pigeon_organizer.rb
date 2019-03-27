@@ -1,3 +1,4 @@
-def nyc_pigeon_organizer(data)
-  data.each { ||
+def nyc_pigeon_organizer(hsh)
+  hsh.each { |quality, data|
+  data.each {
 end
