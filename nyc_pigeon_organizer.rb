@@ -1,4 +1,14 @@
+require 'pry'
 def nyc_pigeon_organizer(hsh)
-  hsh.each { |quality, data|
-  data.each {
+  new_pigeon = {}
+  hsh.each { |trait, data|
+    data.each { |k, v|
+      v.each { |name|
+        if new_pigeon ||= name
+          new_pigeon[name] = {}
+        end
+      }
+    }
+  }
+  binding.pry
 end
